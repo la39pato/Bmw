@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW</title>
+    <link rel="stylesheet" href="estilos1.css">
+</head>
+<body>
+  <!-- Video de fondo -->
+  <video autoplay loop muted id="video-fondo">
+    <source src="recursos/bmw-bg.mp4" type="video/mp4">
+    Tu navegador no soporta videos HTML5.
+  </video>
+
+  <!-- Header con botón animado -->
+  <header>
+    <h1>BMW Turbo Experience</h1>
+    <p>La velocidad empieza aquí.</p>
+    <a href="#galeria" class="boton-neon">Explorar</a>
+  </header>
+
+  <!-- Secciones con efecto aceleración scroll -->
+  <section class="parallax zona1">
+    <h2>Potencia en cada línea</h2>
+  </section>
+
+  <section class="parallax zona2" id="galeria">
+    <h2>Galería Visual</h2>
+    <div class="slider">
+      <input type="radio" name="slider" id="slide1" checked>
+      <input type="radio" name="slider" id="slide2">
+      <input type="radio" name="slider" id="slide3">
+      <div class="slides">
+        <div class="slide s1"><img src="recursos/bmw1.jpg" alt="BMW 1" ></div>
+        <div class="slide s2"><img src="recursos/bmw2.jpg" alt="BMW 2" ></div>
+        <div class="slide s3"><img src="recursos/bmw3.jpg" alt="BMW 3" ></div>
+      </div>
+      <div class="navigation">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+      </div>
+    </div>
+  </section>
+
+  <section class="parallax zona3">
+    <h2>Elige tu destino</h2>
+  </section>
+
+  <div class="boton-contenedor">
+    <a href="Pagina2.html" class="boton-neon">Visita BMW</a>
+  </div>
+
+  <footer>
+    <p>© 2025 BMW Turbo Edition. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */
+  .navbar {
+    display: flex;
+    padding: 20px 40px;
+    background-color: rgb(16, 15, 15);
+    border-bottom: 1px solid #444;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .logo img {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s;
+  }
+  
+/* efecto al pasar el mouse */
+  .logo img:hover {
+    transform: scale(1.05);
+  }
+
+/* Video Section */
+  .x4-video-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  
+  .x4-video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+  
+  .x4-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1;/* para que se vea sobre el video */
+  }
+  
+  .x4-detalle-info {
+    max-width: 700px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px); /* para el efecto de desenfoque */
+  }
+  
+  .x4-detalle-info h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .x4-detalle-info h3 {
+    margin-top: 50px;
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    color: #ccc;
+  }
+  
+  .x4-detalle-info p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .x4-ficha h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+    margin-top: 100px;
+  }
+  
+  .x4-ficha ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .x4-ficha li {
+    font-size: 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .x4-detalle-info {
+      padding: 20px;
+    }
+  
+    .x4-detalle-info h1 {
+      font-size: 32px;
+    }
+  
+    .x4-detalle-info h3 {
+      font-size: 20px;
+    }
+  
+    .x4-detalle-info p,
+    .x4-ficha li {
+      font-size: 16px;
+    }
+  }
+  

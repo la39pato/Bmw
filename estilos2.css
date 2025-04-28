@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #000;
+    color: white;
+  }
+  
+/* NAVBAR */
+  .navbar {
+    display: flex;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid #444;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .logo img {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s;
+  }
+
+/* efecto al pasar el mouse */
+  .logo img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* HERO SECTION */
+  .hero {
+    background: url('recursos/autoypaisaje.webp')no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 100px;
+  }
+  
+  .hero-texto {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .hero h2 {
+    font-size: 90px;
+    margin-bottom: 8px;
+  }
+
+  .hero h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  /*separar*/
+  .separar {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+  }
+  
+  .separar h2 {
+    font-size: 48px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    z-index: 2;
+  }
+  
+  .separar h2::before,
+  .separar h2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 2px;
+    background: #0ff;
+    z-index: 1;
+  }
+  
+  .separar h2::before {
+    left: -110px;
+  }
+  
+  .separar h2::after {
+    right: -110px;
+  }
+  
+
+  /*Auto x6-section*/
+  .x6-section-video {
+    margin-top: 20px;
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    color: white;
+  }
+  
+  .bg-video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  .x6-section-video::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  .x6-section {
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    position: relative;
+    color: white;
+  }
+  
+  .x6-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .x6-texto {
+    z-index: 2;
+    max-width: 400px;
+  }
+  
+  .x6-texto p {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .x6-texto h1 {
+    font-size: 9rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-mas-info {
+    display: inline-block;
+    padding: 12px 90px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-mas-info:hover {
+    background-color: white;
+    color: black;
+  }
+  
+/*Auto x4-section*/
+.x4-section-video {
+    margin-top: 50px;
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    color: white;
+  }
+  
+  .bg-video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  .x4-section-video::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* para oscurecer el video y resaltar el texto */
+    z-index: 1;
+  }
+  .x4-section {
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    position: relative;
+    color: white;
+  }
+  
+  .x4-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* oscurece un poco para que el texto se lea */
+    z-index: 1;
+  }
+  
+  .x4-texto {
+    z-index: 2;
+    max-width: 400px;
+  }
+  
+  .x4-texto p {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .x4-texto h1 {
+    font-size: 9rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-mas-info {
+    display: inline-block;
+    padding: 12px 90px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-mas-info:hover {
+    background-color: white;
+    color: black;
+  }
+/*bmw modelos*/
+ .gama-modelos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px;
+    gap: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .imagen-modelo img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  
+  .texto-modelo {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .texto-modelo .mini-titulo {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .texto-modelo h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .texto-modelo p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+/* Footer */
+  .footer {
+  background-color: #f4f4f4;
+  padding: 30px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  color: #37393b;
+  }
+
+  .footer-links label {
+  margin: 0 15px;
+  cursor: pointer;
+  text-decoration: underline;
+  }
+
+  .modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  color: #37393b;
+}
+
+/* esconder checkbox */
+ .modal-toggle {
+  display: none;
+ }
+
+/* Mostrar modal si está checkeado */
+ .modal-toggle:checked + .modal {
+  display: flex;
+ }
+
+ .modal-box {
+  background: white;
+  padding: 30px;
+  max-width: 500px;
+  width: 90%;
+  border-radius: 12px;
+  position: relative;
+  text-align: left;
+ }
+
+ .close-modal {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+ }
+
+/*queries*/  
+  @media (max-width: 768px) {  
+    .hero {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .hero-texto {
+      padding: 20px;
+    }
+  
+    .hero h1 {
+      font-size: 24px;
+    }
+  
+    .hero h2 {
+      font-size: 48px;
+    }
+  
+    .hero h3 {
+      font-size: 20px;
+    }
+  
+    .separar p {
+      font-size: 30px;
+    }
+  
+    .x6-texto h1 {
+      font-size: 2rem;
+    }
+  
+    .x6-texto {
+      max-width: 90%;
+      text-align: center;
+    }
+
+    .x4-texto h1 {
+        font-size: 2rem;
+      }
+    
+    .x4-texto {
+        max-width: 90%;
+        text-align: center;
+      }
+
+    .gama-modelos {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+      }
+      
+    .texto-modelo {
+        max-width: 100%;
+      }
+      
+    .texto-modelo h2 {
+        font-size: 28px;
+      }
+      
+    .texto-modelo p {
+        font-size: 16px;
+      }
+      
+    .btn-modelos {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+      
+    .footer {
+        padding: 20px 10px;
+      }
+      
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+      }
+      
+    .footer-links a {
+        display: block;
+        margin: 5px 0;
+        font-size: 14px;
+      }
+    }
+  
