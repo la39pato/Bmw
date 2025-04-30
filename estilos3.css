@@ -107,7 +107,17 @@
     padding: 8px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
+  /*nuevo*/
+  .containermodificar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
   
+  .containermodificar img{
+    width: 100%;
+  }
   /* Responsive */
   @media (max-width: 768px) {
     .x6-detalle-info {
@@ -125,6 +135,17 @@
     .x6-detalle-info p,
     .x6-ficha li {
       font-size: 16px;
+    }
+
+    .containermodificar{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .containermodificar img{
+      width: 100%;
     }
   }
   
